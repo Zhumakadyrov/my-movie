@@ -1,3 +1,1 @@
 # adilet.github.io
-
-озгорттум
