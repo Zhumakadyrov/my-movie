@@ -1,0 +1,214 @@
+/* */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+ /* конец кода сброса стилей браузера */
+
+
+
+
+
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    background: linear-gradient(150deg, #000428  0%, #004e92 100%);
+}
+
+
+/* ----- navbar ----- */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    display: block;
+    width: 92px;
+    height: 92px;
+    background: url(../image/my-movie.svg) no-repeat;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.account-settings {
+    width: 30px;
+    display: block;
+}
+
+.nav-btn::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0 auto;
+    background-color: #f00;
+    opacity: 0;
+    transition: opacity .1s;
+}
+
+.nav-btn:hover::after {
+    opacity: 1;
+}
+
+/* ----- mainmenu ----- */
+
+.main-title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.main-menu {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-item {
+    max-width: 300px;
+    max-height: 150px;
+    padding: 5px 0;
+}
+
+.main-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----- регистрация и авторизация ----- */
+
+.reg-container {
+    display: none;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+}
+
+.reg-nav {
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.reg-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.reg-nav li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f00;
+    cursor: pointer;
+}
+
+.reg {
+    width: 300px;
+    margin: 25px auto 50px;
+    text-align: center;
+}
+
+.reg p {
+    font-size: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.reg-item {
+    margin-bottom: 25px;
+}
+
+.reg-item input {
+    width: 100%;
+    padding: 8px 0 8px;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.reg-item input:focus {
+    outline: none;
+    border-bottom: 1px solid #f00;
+}
+
+.reg-item input::placeholder {
+    padding-left: 25px;
+}
+
+.reg-recaptcha {
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    border: 1px solid #b4b4b4;
+    margin-bottom: 25px;
+}
+
+.reg-btn {
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f00;
+    border: none;
+    border-radius: 5px;
+}
+
+.reg-btn:hover {
+    background-color: rgb(255, 108, 108);
+}

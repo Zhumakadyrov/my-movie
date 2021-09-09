@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>My Movie</title>
+</head>
+<body class="body">
+    <main class="container">
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a class="main-logo" href="#"></a></li>
+                <li><a class="nav-btn" href="#">My archive</a></li>
+                <li><a class="nav-btn" href="#">Events</a></li>
+                <li><a class="nav-btn" href="#">Other</a></li>
+                <li><a class="nav-btn" href="#">Settings</a></li>
+                <li><a class="account-settings nav-btn" href="#"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4.2" cy="4.2" r="3.2" stroke="#fff"/><path d="M7 7L9 9" stroke="#fff" stroke-linecap="round"/></svg></a></li>
+            </ul>
+        </nav>
+        
+        <!-- <h1 class="main-title">All your videos in one place</h1> -->
+        <div class="main-menu">
+            <div class="main-item">
+                <img src="videos/placeholder (1).jpg"></img>
+            </div>
+            <div class="main-item">
+                <img src="videos/placeholder (2).jpg"></img>
+            </div>
+            <div class="main-item">
+                <img src="videos/placeholder (3).jpg"></img>
+            </div>
+            <div class="main-item">
+                <img src="videos/placeholder (4).jpg"></img>
+            </div>
+            <div class="main-item">
+                <img src="videos/placeholder (5).jpg"></img>
+            </div>
+        </div>
+    </main> <!--/container-->
+    
+    <div class="reg-container">
+        <div class="reg-nav">
+            <ul>
+                <li>register</li>
+                <li>sign in</li>
+            </ul>
+        </div> <!-- /reg-nav -->
+
+        <form class="reg" action="#" method="GET">
+            <div class="reg-add-photo">
+                <img src="image/user-pic (1).png" alt="">
+                <input type="file">
+            </div>
+
+            <div class="reg-item">
+                <p>Username</p>
+                <input type="text" name="username" value="" placeholder="Type your username">
+            </div>
+            <div class="reg-item">
+                <p>E-mail</p>
+                <input type="emale" name="useremale" value="" placeholder="Type your E-male">
+            </div>
+            <div class="reg-item">
+                <p>Password</p>
+                <input type="password" name="userpass" value="" placeholder="Type your password">
+            </div>
+            <div class="reg-item">
+                <p>Confirm password</p>
+                <input type="password" name="userpass" value="" placeholder="Confirm your password">
+            </div>
+
+            <div class="reg-recaptcha">
+                <input type="checkbox" value="yes">I’m not a robot
+            </div>
+
+            <div>
+                <button class="reg-btn">Create Account</button>
+            </div>
+        </form> <!-- /reg -->
+    </div> <!-- /reg-container -->
+
+    <div class="reg-container">
+        <div class="reg-nav">
+            <ul>
+                <li>register</li>
+                <li>sign in</li>
+            </ul>
+        </div> <!-- /reg-nav -->
+        
+        <form class="reg" action="#" method="GET">
+            <div class="reg-item">
+                <p>Username or E-male</p>
+                <input type="text" name="username" placeholder="Type your username or E-mail">
+            </div>
+            <div class="reg-item">
+                <p>Password</p>
+                <input type="password" name="userpass" placeholder="Type your password">
+            </div>
+            <button class="reg-btn">sign in</button>
+        </form> <!-- /reg -->
+    </div> <!-- /reg-container -->
+</body>
+</html>
