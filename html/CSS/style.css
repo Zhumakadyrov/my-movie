@@ -111,19 +111,17 @@ body {
     right: 5%;
     overflow-x: hidden;
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .main-item {
-    max-width: 300px;
-    max-height: 150px;
-    padding: 5px 0;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
 }
 
 .main-item img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 50%;
     object-fit: cover;
 }
 
